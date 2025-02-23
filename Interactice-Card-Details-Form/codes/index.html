@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./images/index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ifa's Card Details Form Solution</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="gradient-bg"></div>
+            <div class="int-content">
+                <div class="credit-card">
+                    <div class="front-card-details">
+                        <div class="details-wrap">
+                            <svg class="card-logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+                            <div class="number-name-expiry">
+                                <p class="cardNumber">1001 1001 1001 1001</p>
+                                <div class="name-expiry">
+                                    <p class="card-name">JAIYEOLA OMO-ORUN</p>
+                                    <div class="month-year">
+                                        <p class="card-expiry month">00/</p>
+                                        <p class="card-expiry year">00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-back-details">
+                        <p class="cvc-number">000</p>
+                    </div>
+                </div>
+
+                <form class="form">
+                    <div class="name-div">
+                        <label for="name">
+                            CARDHOLDER NAME
+                            <input type="text" id="name" placeholder="e.g jaiyeola omo-orun" class="name-input" name="name">
+                        </label>
+                        <span id="name-error">Error Message</span>
+                    </div>
+
+                    <div class="number-div">
+                        <label for="card-number">
+                            CARD NUMBER
+                            <input type="text" id="card-number" placeholder="e.g 1234 5678 9012 3456" name="card-number">
+                        </label>
+                        <span id="number-error">Error Message</span>
+                    </div>
+
+                    <div class="expiry-cvc">
+                       <div class="expiry">
+                        <label class="month-year" for="month">EXP. DATE(MM/YY)</label>
+                
+                        <div class="expiry-inputs">
+                            <input type="text" id="month" placeholder="MM" name="month">
+                            <input type="text" id="year" placeholder="YY" name="year">
+                        </div>
+                        <span id="date-error">Error Message</span>
+                       </div>
+
+                       <div class="cvc-div">
+                            <label for="cvc">
+                                CVC
+                                <input type="text" placeholder="123" id="cvc" name="cvc">
+                            </label>
+                            <span id="cvc-error">Error Message</span>
+                       </div>
+                    </div>
+                    <button class="form-btn">Confirm</button>
+                </form>
+                
+                <div class="confirmation">
+                    <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+                    <h1>THANK YOU!</h1>
+                    <p class="confirmationP">We've added your card details</p>
+                    <button class="form-btn confirmation-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="index.js"></script>
+</html>
