@@ -1,0 +1,225 @@
+:root{
+    display:inline-flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.wrap{
+    height: 900px;
+    width: 1440px;
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.container{
+    height: 640px;
+    width: 900px;
+    background:hsl(0, 0%, 100%);
+    border-radius: 30px;
+    margin-top: 7.5rem;
+}
+
+.desktop_pic{
+    position: absolute;
+    right: 18.3rem;
+    top: 9rem;
+    height: 66%;
+    border-radius: 20px;
+}
+
+.mobile_img{
+    display: none;
+}
+
+.texts{
+    margin-left: 4.5rem;
+    margin-top: 6rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+.para{
+    position: relative;
+    bottom: -5px;
+    margin-right: 10px;
+}
+
+.email{
+    margin-left: 4.5rem;
+    margin-top: 3rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+.error_prompt{
+    position: absolute;
+    right: 48rem;
+    color: red;
+}
+
+.email_label{
+    position: relative;
+    margin-bottom: -30px; 
+}
+
+.submit{
+    margin-top: 1rem;
+    width: 40%;
+    height: 55px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(3, 3, 55);
+    border: none;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%) ;
+}
+
+.address{
+    margin-top: 7px;
+    border-style: solid;
+    width: 39%;
+    height: 45px;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width: 960px){
+    .wrap{
+        width: 375px;
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 0;
+        height: 800px;
+    }
+
+    .container{
+        display:flexbox;
+        justify-content: center;
+        border-radius: 0;
+        margin:0;
+        height: 800px;
+        width: 375px;
+    }
+
+    .texts{
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    .email{
+        margin-left: 1.5rem;
+    }
+
+    .address{
+        width: 20rem;
+    }
+
+    .error_prompt{
+        position: absolute;
+        right:1.8rem;
+    }
+
+    .submit{
+        width: 20.5rem;
+    }
+
+    .desktop_pic{
+        display: none;
+    }
+
+    .mobile_img{
+        display: block ;
+
+    }
+
+}
+
+
+/* success Section */
+
+.success_wrap{
+    display: inline-flex;
+    justify-content: center;
+    width: 1440px;
+    height: 900px;
+    background: hsl(234, 29%, 20%);
+}
+
+.success{
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.success_content{
+   position: relative;
+   margin-left: 3rem;
+   margin-top: 3rem;
+}
+
+
+.dismiss{
+    width: 22rem;
+    height: 3rem;
+    color: white;
+    background-color: rgb(13, 13, 52);
+    border: none;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.dismiss:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%) ;
+}
+
+.success_p{
+    padding-right: 4rem;
+}
+
+
+@media only screen and (max-width: 960px){
+    .success_wrap{
+        width: 375px;
+        height: 800px;
+        background-color: black;
+       
+    }
+
+    .success{
+        width: 375px;
+        height: 800px;
+        margin-top: 1rem;
+        border-radius: 0;
+    }
+
+    .success_content{
+        margin-top: 9rem;
+        margin-left: 1.8rem;
+    }
+
+    .success_p{
+        padding-right: 2rem;
+    }
+
+    .dismiss{
+        width: 20rem;
+        margin-top:15rem ;
+    }
+
+}

@@ -1,0 +1,145 @@
+:root{
+    display: flex;
+    justify-content: center;
+}
+
+
+.page_wrap{
+    /* display: flex;
+    justify-content: center; */
+    width: 1440px;
+    height: 900px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 1rem;
+}
+
+.inputDiv{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 8.8rem;
+    left: 20rem;
+    background-color: white;
+    height: 600px;
+    width: 830px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 14rem;
+}
+
+@media only screen and (max-width: 960px) {
+    :root{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(156, 156, 156)
+    }
+
+    .page_wrap{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 375px;
+        height: 700px;
+        margin-top:  0px;
+        
+    }
+
+    .inputDiv{
+        position:  absolute;
+        top:  5rem;
+        left:  0rem;
+        width: 375px;
+        height: 500px;
+        border-bottom-right-radius: 6rem;
+    }
+
+}
+
+/* @media only screen and (max-width: 1300px){
+    .page_wrap{
+
+    }
+} */
+
+
+.calcuBtn{
+    position: absolute;
+    top: 10rem;
+    right: 4rem;
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+    background:  url(icon-arrow.svg);
+    background-color: hsl(259, 100%, 65%);
+    background-repeat: no-repeat;
+}
+
+.calcuBtn:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+@media only screen and (max-width: 960px){
+    .calcuBtn{
+        width: 4rem;
+        height: 4rem;
+        left: 9.7rem;
+        background-image: url(images/icon-arrow.svg);
+    }
+}
+
+.tags{
+    font-family:  'Poppins';
+    font-weight: 500;
+}
+
+.outputers{
+    font-size: 6rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 960px){
+    .outputers{
+        font-size: 3.5rem;
+    }
+}
+
+.dayout{
+    color: hsl(259, 100%, 65%);
+    position: absolute;
+    left:  4rem;
+    top: 21.4rem;
+}
+
+.monthout{
+    color: hsl(259, 100%, 65%);
+    position:  absolute;
+    left:  4rem;
+    top: 15rem;
+}
+
+.yearout{
+    color: hsl(259, 100%, 65%);;
+    position:  absolute;
+    left:  4rem;
+    top: 9rem;
+}
+
+@media only screen and (max-width: 960px){
+    .yearout{
+        left:  1.5rem;
+        top:  12rem;
+    }
+
+    .monthout{
+        left: 1.5rem;
+        top:  16rem;
+    }
+
+    .dayout{
+        left: 1.5rem;
+        top: 20.1rem;
+    }
+}

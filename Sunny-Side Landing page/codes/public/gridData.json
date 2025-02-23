@@ -1,0 +1,124 @@
+{
+        "grid":
+                [
+                    { 
+                        "h2": "Transform your brand",
+                        "description": "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
+                        "more": "LEARN MORE",
+                        "key":10
+                    },
+                    
+                    {   "img":{
+                                    "desktop":"./assets/images/image-transform.jpg",
+                                    "mobile":"./assets/images/mobile/image-transform.jpg",
+                                    "key":11
+                                }
+                
+                    },
+                    {   "img":{
+                                    "desktop":"./assets/images/image-stand-out.jpg",
+                                    "mobile":"./assets/images/mobile/image-stand-out.jpg",
+                                    "key":12
+                                }
+                
+                    },
+
+                    {   
+                        "h2": "Stand out to the right audience",
+                        "description": "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.",
+                        "more": "LEARN MORE",
+                        "class": "fourth"
+                    },
+
+                    {   "img":
+                                {
+                                    "desktop":"./assets/images/image-graphic-design.jpg",
+                                    "mobile":"./assets/images/mobile/image-graphic-design.jpg"
+                                },
+                    
+                        "heading": "Graphic Design",
+                        "details": "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention."
+                    },
+                    
+                    {   "img":
+                                {
+                                    "desktop":"./assets/images/image-photography.jpg",
+                                    "mobile":"./assets/images/mobile/image-photography.jpg"
+                                },
+                                
+                        "heading": "Photography",
+                        "details": "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
+                        "photo": true
+                    }
+
+                ],
+        
+        "testimonials":
+                [
+                    {
+                        "img":"image-emily.jpg",
+                        "testimonial":"We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
+                        "name":"Emily R.",
+                        "position":"Marketing Director"
+
+                    },
+
+                    {
+                        "img":"image-thomas.jpg",
+                        "testimonial":"  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
+                        "name":"Thomas S.",
+                        "position":"Chief Operating Officer"
+
+                    },
+                    
+                    {
+                        "img":"image-jennie.jpg",
+                        "testimonial":"Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
+                        "name":"Jennie F.",
+                        "position":"Business Owner"
+                    }
+                    
+                ],
+
+        "flexImg":
+                [
+                    {
+                        "img":
+                            {
+                                "desktop":"./assets/images/image-gallery-milkbottles.jpg",
+                                "mobile":"./assets/images/mobile/image-gallery-milkbottles.jpg",
+                                "key":"1"
+                            }
+                                
+                    },
+
+                    {
+                        "img":
+                            {
+                                "desktop":"./assets/images/image-gallery-orange.jpg",
+                                "mobile":"./assets/images/mobile/image-gallery-orange.jpg",
+                                "key":"2"
+                            }
+                        
+                    },
+
+                    {
+                        "img":
+                            {
+                                "desktop":"./assets/images/image-gallery-cone.jpg",
+                                "mobile":"./assets/images/mobile/image-gallery-cone.jpg",
+                                "key":"3"
+                            }
+                    },
+                    
+                    {
+                        "img":
+                            {
+                                "desktop":"./assets/images/image-gallery-sugarcubes.jpg",
+                                "mobile":"./assets/images/mobile/image-gallery-sugarcubes.jpg",
+                                "key":"4"
+                            }
+                    }
+                ]
+
+}
