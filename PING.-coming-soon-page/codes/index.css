@@ -1,0 +1,287 @@
+@font-face {
+    font-family:'Libra Bold' ;
+    src: url(fonts/LibreFranklin-Bold.ttf);
+}
+
+@font-face {
+    font-family:'Libra Light' ;
+    src: url(fonts/LibreFranklin-Light.ttf);
+}
+
+@font-face {
+    font-family:'Libra ExtraLight' ;
+    src: url(fonts/LibreFranklin-ExtraLight.ttf);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1440px;
+    min-height: 100vh;
+    position: relative;
+    gap: 7rem;
+}
+
+section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article{
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    height: 4rem;
+}
+
+.logo{
+    width: 5.37rem;
+    position: relative;
+    left: -1px;
+    top: 3.6rem;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+h1{
+    margin-bottom: 0.3px;
+    font-size: 2.89rem;
+    font-family: 'Libra Light';
+    color: hsl(0, 0%, 59%);
+    font-weight: 100;
+    letter-spacing: .8px;
+    word-spacing: .6px;
+    animation: 2s ease-out 0s 1 slideInFromRight;
+   
+}
+
+
+h2{
+    font-family: 'Libra ExtraLight';
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    animation: 2.5s ease-out 0s 1 slideInFromLeft;
+}
+
+h1, h2{
+    position: relative;
+    top: -3.1rem;
+}
+
+.soon-bold{
+    color: hsl(209, 33%, 12%);
+    font-family: 'Libra bold';
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@media only screen and (max-width: 700px){
+    .content{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    article{
+        height: unset;
+    }
+}
+
+form{
+    position: relative;
+    top: -1.57rem;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.email-input{
+    width: 25.9rem;
+    border-radius: 12.9rem;
+    height: 3.2rem;
+    outline: none;
+    border: .1px solid hsl(223, 100%, 88%);
+    color: hsl(223, 30%, 74%);
+    font-size: 1rem;
+    font-family: 'Libra ExtraLight';
+    text-indent: 1.7rem;
+    letter-spacing: .2px;
+}
+
+button{
+    height: 3.5rem;
+    border: none;
+    width: 12.5rem;
+    border-radius: 6.25rem;
+    font-family: 'Libra Bold';
+    font-size: 1rem;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    box-shadow: 0 5px 5px 2px #dae2f5;
+}
+
+button:hover{
+    opacity: .7;
+}
+
+.error-message{
+    font-size: 12px;
+    color: hsl(354, 100%, 66%);
+    font-family: 'Libra Light';
+    opacity: .7;
+    position: absolute;
+    top: 1.66rem;
+    letter-spacing: .18px;
+    text-indent: 2rem;
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .email-input{
+        width: 21rem;
+    }
+
+    button{
+        width: 21.4rem;
+        font-family: 'Libra Light';
+        font-weight: 500;
+    }
+
+    .error-message{
+        top: 1.8rem;
+        text-indent: 0;
+    }
+}
+
+.dashboard{
+    position: relative;
+    top: 3.3rem;
+    width: 640px;
+    height: 390px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px){
+    .dashboard{
+        width: 90%;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 700px){
+    .dashboard{
+        width: 430px;
+        height: 350px;
+    }
+}
+
+footer{
+    position: relative;
+    top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.social-icons{
+    position: relative;
+    display: flex;
+    height: 33px;
+    gap: 12.5px;
+}
+
+.facebook{
+    position: relative;
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#facing-book:hover{
+    background-color: #0165E1;
+    border-color: rgb(255, 255, 255, 0);
+}
+
+#instagram:hover{
+    border-color: rgb(255, 255, 255, 0);
+    background-color: #0165E1;
+}
+
+#instagram:hover{
+    border-color: rgb(255, 255, 255, 0);
+    background-color: #17A9FD;
+}
+
+.facebook:hover svg{
+    fill: white;
+}
+
+#twitter:hover{
+    background-color: #1DA1F2;
+    border-color: rgb(255, 255, 255, 0);
+}
+
+#twitter:hover #Dribbble-Light-Preview{
+    fill: white;
+}
+
+.copyright{
+    position: relative;
+    left: -1px;
+    font-size: 12px;
+    font-family: 'Libra Light';
+    font-weight: 100;
+    margin-top: 24px;
+    color: hsl(0, 0%, 59%);
+    opacity: .7;
+}
