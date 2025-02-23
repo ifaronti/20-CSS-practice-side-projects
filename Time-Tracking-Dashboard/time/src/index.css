@@ -1,0 +1,406 @@
+@font-face {
+  font-family: 'Rubik Light';
+  src: url(components/Rubik/Rubik-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url(components/Rubik/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Rubik Medium';
+  src: url(components/Rubik/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Rubik Bold';
+  src: url(components/Rubik/Rubik-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  min-height: 100vh;
+  background-color: #0D1323;
+}
+
+.content-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.profile{
+  position: relative;
+  height: 355px;
+  width: 255px;
+  background-color: #5746EA;
+  border-radius: 15px;
+  top: 1.2rem;
+  z-index: 3;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.proImg{
+  position: absolute;
+  top: 2.1rem;
+  left: 1.8rem;
+  height: 5rem;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+
+.report-name{
+  position: absolute;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  top: 8.89rem;
+  left: 2rem;
+}
+
+.report{
+  color: #A9A3FC;
+  font-family: 'Rubik Light';
+}
+
+.name{
+  color: #F7F3FF;
+  font-family: 'Rubik Light';
+  font-weight: 100;
+  margin-top: -.9rem;
+  font-size: 2.5rem;
+}
+
+.times{
+  position: relative;
+  width: 255px;
+  height: 181px;
+  background-color: #1D204B;
+  border-radius: 15px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.button-wrap{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1.75rem;
+  top: 2.74rem;
+}
+
+.time-frame{
+  background: none;
+  border: none;
+  font-family: 'Rubik Light';
+  position: relative;
+  font-size: 1.2rem;
+  color: #6F71AB;
+  text-align: left;
+  cursor: pointer;
+}
+
+.time-frame:hover{
+  color: #EBEDFE;
+}
+
+.currentFrame{
+  color: #EBEDFE;
+}
+
+.frame-wrap{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  top: 12px;
+  row-gap: 1.77rem;
+  column-gap: 1.85rem;
+}
+
+.card--box{
+  display: flex;
+  flex-direction: column;
+}
+
+.card--top{
+  width: 255px;
+  height: 70px;
+  border-radius: 15px;
+  overflow-y: hidden;
+}
+
+.title-logo{
+  position: relative;
+  float: right;
+  right: 14px;
+}
+
+.card--bottom{
+  width: 255px;
+  height: 200px;
+  background-color: #1D204B;
+  border-radius: 15px;
+  position: relative;
+  margin-top: -1.5rem;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  cursor: pointer;
+}
+
+.card--bottom:hover{
+  background-color: #34397B;
+}
+
+@media only screen and (min-width:340px) and (max-width:768px){
+  body{
+    background-color: #0D1323;
+  }
+
+  .app{
+    width: 100vw;
+    min-height: 100vh;
+
+  }
+
+  .content-wrap{
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom: 90px;
+    margin-top: 70px;
+    gap: .8rem;
+  }
+
+  .frame-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .card--top{
+    width: 329px;
+    height: 60px;
+  }
+
+  .card--bottom{
+    width: 329px;
+    height: 125px;
+  }
+
+  .title-logo{
+    top: -3px;
+  }
+
+  .profile-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .report-name{
+    position: relative;
+    top: 0;
+    left: 3.3rem;
+  }
+  
+  .profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+    height: 135px;
+    width: 329px;
+  }
+  
+  .proImg{
+    position: absolute;
+    height: 4rem;
+    top: 2rem;
+    left: 2rem;
+  }
+  
+  .name{
+    font-size: 1.5rem;
+  }
+  
+  .times{
+    width: 329px;
+    height: 87px;
+  }
+
+  .button-wrap{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 1rem;
+    top: 2rem;
+  }
+  
+  .time-frame{
+    top: 9px;
+  }
+}
+
+.Work{
+  background-color: hsl(15, 100%, 70%);
+  animation: .4s ease-out 0s 1 slideInFromRight;
+}
+
+.Play{
+  background-color: hsl(195, 74%, 62%);
+  animation: .6s ease-out 0s 1 slideInFromRight;
+}
+
+.Study{
+  background-color: hsl(348, 100%, 68%);
+  animation: 0.8s ease-out 0s 1 slideInFromRight;
+}
+
+.Exercise{
+  background-color: hsl(145, 58%, 55%);
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.Social{
+  background-color: hsl(264, 64%, 52%);
+  animation: 2s ease-out 0s 1 slideInFromRight;
+}
+
+.Self-Care{
+  background-color: hsl(43, 84%, 65%);
+  animation: 3s ease-out 0s 1 slideInFromRight;
+}
+
+.card-content{
+  margin: .7rem 1.9rem;
+}
+
+.work-options{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title{
+  color: #F8FBFF;
+  font-family: 'Rubik Regular';
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: .3px;
+}
+
+.options{
+  position: relative;
+  left: 1px;
+  cursor: pointer;
+}
+
+.current-previous{
+  position: relative;
+}
+
+h2{
+  font-family: 'Rubik Light';
+  color: #FCFFFF;
+  font-size: 3.38rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-top: 7px;
+}
+
+.prevTime{
+  color: #BCBFF4;
+  font-family: 'Rubik Light';
+  font-weight: 100;
+  font-size: .96rem;
+  margin-top: -2.33rem;
+}
+
+@media only screen and (min-width:340px) and (max-width:768px){
+  .card-content{
+    margin: .7rem 1.5rem;
+  }
+  
+  .work-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .title{
+    letter-spacing: 0;
+  }
+  
+  .options{
+    position: relative;
+  }
+  
+  .current-previous{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -.6rem;
+    margin-left: -2px;
+  }
+  
+  h2{
+    font-family: 'Rubik Light';
+    color: #FCFFFF;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 0;
+  }
+  
+  .prevTime{
+    color: #BCBFF4;
+    font-family: 'Rubik Light';
+    font-weight: 100;
+    font-size: .96rem;
+    margin-top: -.5rem;
+  }
+}
